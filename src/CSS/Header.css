@@ -1,0 +1,111 @@
+/*========================HEADER========================*/
+.header {
+    width: 100%;
+    background-color: var(--deep__aqua);
+
+}
+
+.header .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7rem;
+}
+
+.header .wrapper .header__logo {
+    font-size: 2.2rem;
+    color: var(--peach__cream)
+}
+
+.wrapper #header__nav .header__nav__ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.header__nav__ul .header__nav__ul__li .nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 0rem;
+    color: var(--peach__cream);
+    transform: color 0.3 ease;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.header__nav__ul__li .nav-link::after {
+    content: "";
+    position: absolute;
+    height: 0.2rem;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.header__nav__ul__li .nav-link:hover::after {
+    width: 100%;
+}
+
+.header .wrapper #menuButton {
+    display: none;
+}
+
+.header .wrapper .header__button {
+
+    width: 14rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: var(--peach__cream);
+    color: var(--deep__aqua);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media(max-width:800px) {
+    .wrapper {
+        position: relative;
+    }
+
+    .wrapper #header__nav {
+        width: 100%;
+        top: 7rem;
+        height: 0;
+        background-color: var(--deep__aqua);
+        position: absolute;
+        transition: ease 1s;
+        overflow-y: hidden;
+        visibility: hidden;
+
+    }
+
+    .header .wrapper .header__button {
+        display: none;
+    }
+
+    .header .wrapper #menuButton {
+        display: block;
+    }
+
+    .wrapper #header__nav.active {
+        width: 100%;
+        height: calc(100vh - 7rem);
+        overflow-y: hidden;
+        visibility: visible;
+
+    }
+
+    .wrapper #header__nav .header__nav__ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header__nav .header__nav__ul .header__nav__ul__li:hover {
+        width: 100%;
+        background-color: rgba(128, 128, 128, 0.548);
+        text-align: center;
+    }
+}
