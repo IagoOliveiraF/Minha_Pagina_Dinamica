@@ -23,9 +23,7 @@ function Header(props) {
             <li className='header__nav__ul__li'><a href="#" className='nav-link active'>Home</a></li>
             <li className='header__nav__ul__li'><a href="#" className='nav-link active'>Soluções</a></li>
             <li className='header__nav__ul__li'><a href="#" className='nav-link active'>Produtos</a></li>
-            <li className='header__nav__ul__li'><a href="#" className='nav-link active'>Inovações</a></li>
             <li className='header__nav__ul__li'><a href="#" className='nav-link active'>Sobre nós</a></li>
-            <li className='header__nav__ul__li'><a href="#" className='nav-link active'>Blog</a></li>
           </ul>
         </nav>
         <img src={hamburguerIconPng} alt="Um icone que é clicavel para expandir o menu no celular" id='menuButton' onClick={toggleMenu}></img>

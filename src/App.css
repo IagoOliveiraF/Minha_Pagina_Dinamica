@@ -8,6 +8,10 @@
 
 }
 
+body{
+    /* background-color: var(--peach__cream); */
+     background-color: var(--peach__cream);
+}
 
 /*
 .urbanist-<uniquifier> {
@@ -17,11 +21,19 @@
   font-style: normal;
 }*/
 
+
+
 :root{
     font-family: "Urbanist", sans-serif;
     font-size:62.5%;
     --deep__aqua:#288783;
     --peach__cream:#FFEBD0;
+    --techColor--StrongBlue:#611DF2;
+    --techColor--MediumBlue:#6D49F2;
+    --techColor--MediumPurple:#8777F2;
+    --techColor--lowGreen:#40F296;
+    --techColor--mediumGreen:#3DF27C;
+    
 }
 
 .wrapper{

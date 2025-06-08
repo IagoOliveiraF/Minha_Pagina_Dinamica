@@ -1,0 +1,52 @@
+/*Colors
+   --deep__aqua:#288783;
+    --peach__cream:#FFEBD0;
+    --techColor--StrongBlue:#611DF2;
+    --techColor--MediumBlue:#6D49F2;
+    --techColor--MediumPurple:#8777F2;
+    --techColor--lowGreen:#40F296;
+    --techColor--lowGreen:#3DF27C;
+
+    .urbanist-<uniquifier> {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+*/
+
+
+/*========================SECTION========================*/
+.wrapper .main__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10rem;
+
+}
+
+.wrapper .main__section .main__section__ProductApresentation {
+    width: min(60rem,100%);
+}
+
+.main__section .main__section__ProductApresentation h1 {
+    font-size: 2.8rem;
+    padding-bottom: 1.5rem;
+}
+
+.main__section .main__section__ProductApresentation p {
+    font-size: 1.8rem;
+}
+
+.wrapper .main__section .main__section__ProductApresentationImg {
+    width: min(50rem,100%);
+}
+
+
+@media(max-width:800px){
+
+   .wrapper .main__section {
+    flex-direction: column-reverse;
+
+} 
+}
